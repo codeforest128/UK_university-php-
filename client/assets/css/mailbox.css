@@ -1,0 +1,524 @@
+
+
+
+/* ==========================================================================
+7. Email Componants
+========================================================================== */
+
+
+/*------------------------
+7.1  Inbox
+----------------------------*/
+
+.page-aside {
+    background: none repeat scroll 0 0 #ffffff;
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 265px;
+    border-right: 1px solid #e6e6f2;
+    margin-top: 61px;
+    padding-bottom: 61px;
+    color: #404040;
+}
+
+.page-aside .aside-header {
+    padding: 20px 22px;
+    position: relative;
+}
+
+.aside-header {}
+
+.aside-header .navbar-toggle {
+    background: 0 0;
+    display: none;
+    outline: 0;
+    border: 0;
+    padding: 0 11px 0 0;
+    text-align: right;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.aside-header .navbar-toggle .icon {
+    font-size: 24px;
+    color: #71738d;
+}
+
+.aside-nav .nav li .icon {
+    font-size: 13px;
+    vertical-align: middle;
+    text-align: center;
+    min-width: 19px;
+    margin-right: 6px;
+    color: #71748d;
+}
+
+.aside-nav .nav li.active a {
+    color: #f12257;
+    background: #fff0f4;
+}
+
+.aside-nav .nav li.active a .icon {
+    color: #4285f4;
+}
+
+.aside-header .title {
+    display: block;
+    margin: 10px 0 0;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 300;
+    color: #3d405c;
+}
+
+.aside-header .description {
+    color: #71748d;
+    margin: 0;
+}
+
+.aside-nav.collapse {
+    display: block;
+}
+
+.aside-nav {
+    visibility: visible;
+    font-size: 14px;
+}
+
+.aside-content .nav {
+    display: block;
+}
+
+.aside-content .nav li a {
+    display: block;
+    position: relative;
+}
+
+.aside-nav .nav li a {
+    color: #71748d;
+    padding: 10px 20px;
+}
+
+.aside-content .nav li a:hover {
+    text-decoration: none;
+    background-color: #efeff6;
+}
+
+.aside-nav .nav li.active a .icon {
+    color: #dd1151;
+}
+
+.email-list-item .from {
+    display: block;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0 0 1px 0;
+}
+
+.email-list-item .msg {
+    margin: 0;
+    color: #71738d;
+}
+
+.email-list-item .icon {
+    margin-right: 7px;
+    font-size: 1.154rem;
+    vertical-align: middle;
+    color: #3d405c;
+}
+
+.aside-nav .nav li .badge {
+    float: right;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 3px 6px;
+}
+
+.aside-nav .title {
+    display: block;
+    color: #3d405c;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    padding: 8px 22px 4px;
+}
+
+.aside-compose {
+    text-align: center;
+    padding: 14px 25px;
+}
+
+.dashboard-main-wrapper .main-content {
+    margin-left: 266px;
+    width: auto;
+}
+
+.email-inbox-header {
+    background-color: #fff;
+    padding: 25px 25px;
+}
+
+.email-title {
+    display: block;
+    margin: 3px 0 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.email-title .icon {
+    font-size: 22px;
+    color: #71738d;
+}
+
+.email-title .new-messages {
+    font-size: 1rem;
+    color: #3d405c;
+    margin-left: 3px;
+}
+
+.input-search .input-group-btn {
+    position: absolute;
+    display: block;
+    width: auto;
+    top: 1px;
+    right: 1px;
+    z-index: 3;
+}
+
+.input-search .input-group-btn .btn {
+    padding: 5px 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.email-filters {
+    padding: 20px;
+    border-bottom: 1px solid #e6e6f2;
+    background-color: #fff;
+    display: table;
+    width: 100%;
+    border-top: 1px solid #e6e6f2;
+}
+
+
+
+.email-filters .be-select-all.custom-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.email-filters input {
+    margin-right: 8px;
+}
+
+.custom-control-label {
+    position: static;
+    display: inline-block;
+    line-height: 2;
+}
+
+.email-filters .email-filters-right {
+    text-align: right;
+}
+
+.email-filters>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.email-pagination-indicator {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+}
+
+.email-list {
+    background: #eee;
+}
+
+.email-list-item {
+    border-bottom: 1px solid #e6e6f2;
+    padding: 10px 20px;
+    display: table;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    background-color: #fcfcff;
+    font-size: 14px;
+}
+
+.email-list-item--unread {
+    background-color: #ffffff;
+}
+
+.email-list-item--unread .from,
+.email-list-item--unread .msg {
+    color: #3d405c;
+    font-weight: 800;
+    -webkit-font-smoothing: initial;
+}
+
+.email-list-item--unread .msg {
+    color: #3d405c;
+}
+
+.email-list-actions {
+    width: 40px;
+}
+
+.email-list-actions,
+.email-list-detail {
+    vertical-align: top;
+    display: table-cell;
+}
+
+.email-list-actions .favorite {
+    display: block;
+    padding-top: 5px;
+    padding-left: 1px;
+    line-height: 15px;
+}
+
+.email-list-actions .favorite span {
+    font-size: 12px;
+    line-height: 10px;
+    color: silver;
+}
+
+.email-list-actions .favorite:hover span {
+    color: #8d8d8d;
+}
+
+.email-list-actions .favorite.active span {
+    color: #ffc600;
+}
+
+.email-list-item:hover {
+    background-color: #fff;
+}
+
+.email-list-actions .custom-checkbox {
+    padding: 0;
+    margin-top: -2px;
+}
+
+.email-list-actions .custom-checkbox.custom-control {
+    margin-bottom: 0;
+}
+
+
+/*-------------------
+7.2  Email Details
+--------------------*/
+
+.email-head {
+    background-color: #fff;
+}
+
+.email-head-subject {
+    padding: 25px 25px;
+    border-bottom: 1px solid #e6e6f2;
+}
+
+.email-head-subject .title {
+    display: block;
+    font-size: 1.769rem;
+    font-weight: 300;
+    color: #3d405c;
+}
+
+.email-head-subject .title>a.active .icon {
+    color: #ffc600;
+}
+
+.email-head-subject .title>a .icon {
+    color: silver;
+    font-size: 14px;
+    margin-right: 6px;
+    vertical-align: middle;
+    line-height: 31px;
+    position: relative;
+    top: -1px;
+}
+
+.email-head-subject .icons {
+    font-size: 14px;
+    float: right;
+}
+
+.email-head-subject .icons .icon {
+    color: #71738d;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+.email-head-sender .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.email-head-sender {
+    padding: 13px 25px;
+    line-height: 40px;
+}
+
+.email-head-sender .date {
+    float: right;
+    font-size: 12px;
+}
+
+.email-head-sender .avatar {
+    float: left;
+    margin-right: 10px;
+}
+
+.email-head-sender .sender {
+    font-size: 1.15rem;
+}
+
+.email-head-sender .sender .actions {
+    display: inline-block;
+    position: relative;
+}
+
+.email-head-sender .sender .icon {
+    font-size: 1.538rem;
+    line-height: 16px;
+    color: #5a5a5a;
+    margin-left: 7px;
+}
+
+.email-body {
+    background-color: #fff;
+    border-top: 1px solid #e6e6f2;
+    padding: 30px 28px;
+}
+
+.email-attachments {
+    background-color: #fff;
+    padding: 25px 28px;
+    border-top: 1px solid #e6e6f2;
+}
+
+.email-attachments .title {
+    display: block;
+    font-weight: 500;
+}
+
+.email-attachments .title span {
+    font-weight: 400;
+}
+
+.email-attachments ul {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+.email-attachments ul>li {
+    line-height: 23px;
+}
+
+.email-attachments ul>li a {
+    color: #404040;
+    font-weight: 500;
+}
+
+.email-attachments ul>li .icon {
+    vertical-align: middle;
+    color: #737373;
+    margin-right: 2px;
+}
+
+.email-attachments ul>li span {
+    font-weight: 400;
+}
+
+
+/*-------------------
+7.3 Email Compose
+----------------------*/
+
+.email-head-title {
+    padding: 25px 25px;
+    border-bottom: 1px solid #e6e6f2;
+    display: block;
+    font-weight: 400;
+    color: #3d405c;
+    font-size: 1.769rem;
+}
+
+.email-head-title .icon {
+    color: #696969;
+    margin-right: 12px;
+    vertical-align: middle;
+    line-height: 31px;
+    position: relative;
+    top: -1px;
+    float: left;
+    font-size: 1.538rem;
+}
+
+.email-compose-fields {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6f2;
+    padding: 30px 30px 20px;
+}
+
+.form-group.row {
+    margin-bottom: 0;
+    padding: 12px 0;
+}
+
+.form-group.row label {
+    white-space: nowrap;
+}
+
+.email-compose-fields label {
+    padding-top: 15px;
+}
+
+.email.editor {
+    background-color: #fff;
+}
+
+.email.action-send {
+    padding: 20px 0px;
+}
+
+.btn-space {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.breadcrumb {
+    margin: 0;
+    background-color: transparent;
+}
+
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width:320px) {}

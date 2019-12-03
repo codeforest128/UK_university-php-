@@ -1,0 +1,6 @@
+[10-Jun-2019 22:25:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DESC' at line 1 in /home/u659159300/domains/oxbridgecareershub.co.uk/classes/DB.php:15
+Stack trace:
+#0 /home/u659159300/domains/oxbridgecareershub.co.uk/classes/DB.php(15): PDOStatement->execute(Array)
+#1 /home/u659159300/domains/oxbridgecareershub.co.uk/public_html/adminrep/feed.php(62): DB::query('SELECT * FROM p...')
+#2 {main}
+  thrown in /home/u659159300/domains/oxbridgecareershub.co.uk/classes/DB.php on line 15

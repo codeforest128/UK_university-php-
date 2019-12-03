@@ -1,0 +1,1 @@
+<button class="btn btn-primary submit-search" type="submit">Search</button>
